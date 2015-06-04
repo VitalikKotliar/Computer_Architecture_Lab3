@@ -1,0 +1,64 @@
+﻿<html ng-app="labaApp" >
+<head >
+    <title>Task2</title>
+    <script src="/static/jquery-1.11.1.min.js"></script>
+    <script src="/static/angular.js"></script>
+    <script src="/static/script.js"></script>
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <link href="/static/bootstrap.css" rel="stylesheet"/>
+    <link href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <link href="/static/main.css" rel="stylesheet"/>
+
+</head>
+<body ng-controller="labaCtrl">
+<div class="wrapper">
+    <div class="left">
+        <button onclick="DeleteFunc();"  class="btn btn-success">Delete</button>
+        <input id="id_delete" type="text" placeholder="id" />
+        <input placeholder="director" id="director" type="text" value=""/>
+        <input placeholder="id"  id="id" type="text" value=""/>
+        <input placeholder="year" id="year" type="text" value=""/>
+        <input placeholder="title" id="title" type="text" value=""/>
+         <button onclick="AddFunc();" class="btn btn-info">Add</button>
+
+        <input placeholder="title" id="edit" type="text" value=""/>
+        <input placeholder="id" id="edit_id" type="text" value=""/>
+        <button onclick="EditFunc();" class="btn btn-danger">Edit</button>
+
+    </div>
+    <div class="right">
+        <!--<table class="table table-bordered table-hover">-->
+            <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>#</th>-->
+                    <!--<th>Title</th>-->
+                    <!--<th>Director</th>-->
+                    <!--<th>Year</th>-->
+                <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody class="table-striped">-->
+                <!--<tr>-->
+                    <!--<td>{{lolka}}</td>-->
+                    <!--<td>{{}}</td>-->
+                    <!--<td>3</td>-->
+                    <!--<td>3</td>-->
+                <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+
+        <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Director</th>
+                <th>Id</th>
+                <th>Year</th>
+                <th>Title</th>
+                <!--<th width="20px"></th>-->
+            </tr>
+        </thead>
+
+    </table>
+    </div>
+</div>
+</body>
+</html>

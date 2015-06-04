@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background: #cccccc;
+    /*opacity: 0.4;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #d2ebf9 0%,#feffff 100%);
+    border: 1px solid #6eaad8;
+    padding: 20px;
+}
+.left{
+    height: 500px;
+    width: 200px;
+    float: left;
+}
+.right{
+    float: right;
+    width: 550px;
+}
+.btn{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+#id_delete{
+    width: 70px;
+    padding-left: 30px;
+    margin-left: 5px;
+
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn-info, .btn-danger{
+    width: 180px;
+    font-size: 18px;
+}
